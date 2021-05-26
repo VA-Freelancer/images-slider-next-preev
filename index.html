@@ -2,70 +2,111 @@
 <html lang="en" dir="ltr">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Responsive Image Slider With Next And Previous Buttons</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/slider.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Slider With Next And Previous Buttons</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
+    <section class="section-slider">
+        <div class="container">
+            <div class="slider">
+                <div class="slide active">
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="./img/1.jpg" alt="">
 
-	<div class="slider">
-		<div class="slide active">
-			<img src="./img/1.jpg" alt="">
-			<div class="info">
-				<h2>Winter Mountains</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-					dolore magna aliqua.</p>
-			</div>
-		</div>
-		<div class="slide">
-			<img src="./img/2.jpg" alt="">
-			<div class="info">
-				<h2>Tropical Desert</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-					dolore magna aliqua.</p>
-			</div>
-		</div>
-		<div class="slide">
-			<img src="./img/3.jpg" alt="">
-			<div class="info">
-				<h2>Steaming Volcanoes</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-					dolore magna aliqua.</p>
-			</div>
-		</div>
-		<div class="slide">
-			<img src="./img/4.jpg" alt="">
-			<div class="info">
-				<h2>Mountain River</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-					dolore magna aliqua.</p>
-			</div>
-		</div>
-		<div class="slide">
-			<img src="./img/5.jpg" alt="">
-			<div class="info">
-				<h2>Egypt Pyramids</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-					dolore magna aliqua.</p>
-			</div>
-		</div>
-		<div class="navigation">
-			<i class="fas fa-chevron-left prev-btn"></i>
-			<i class="fas fa-chevron-right next-btn"></i>
-		</div>
-		<div class="navigation-visibility">
-			<div class="slide-icon active"></div>
-			<div class="slide-icon"></div>
-			<div class="slide-icon"></div>
-			<div class="slide-icon"></div>
-			<div class="slide-icon"></div>
-		</div>
-	</div>
-	<script src="./js/slider.js"></script>
+
+                        <div class="info">
+                            <div class="slider__text">
+                                <h2>Гидроизоляция</h2>
+                                <p>Уникальное торговое предложение помогает донести до потенциального клиента те особенные выгоды, которые он получит, обратившись именно к вам. </p>
+
+                            </div>
+                            <div class="old-price">старая цена 5000р</div>
+                            <div class="new-price">Новая цена 3500р</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="slide ">
+                    <img src="./img/2.jpg" alt="">
+
+                    <div class="info">
+                        <div class="slider__text">
+                            <h2>Ремонт, усиление фундаментов</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="old-price">старая цена 6000р</div>
+                        <div class="new-price">Новая цена 3500р</div>
+                    </div>
+
+
+
+                </div>
+                <div class="slide">
+                    <img src="./img/3.jpg" alt="">
+                    <div class="info">
+                        <div class="slider__text">
+                            <h2>Ремонт гидроизоляции паркингов</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="old-price">старая цена 4000р</div>
+                        <div class="new-price">Новая цена 3500р</div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="navigation">
+                    <i class="fas fa-chevron-left prev-btn"></i>
+                    <i class="fas fa-chevron-right next-btn"></i>
+                </div>
+                <div class="navigation-visibility">
+                    <div class="slide-icon active"></div>
+                    <div class="slide-icon"></div>
+                    <div class="slide-icon"></div>
+
+                </div>
+                <div class="form">
+                    <form action="#" id="sliderForm" class="slider__forms-body">
+                        <h2 class="forms__title">Заказать</h2>
+                        <div class="slider__forms-item">
+                            <label for="formName" class="forms__label">Имя:</label>
+                            <input type="text" name="name" id="formName" class="forms__input" placeholder="Ваше имя" maxlength="255">
+                        </div>
+                        <div class="slider__forms-item">
+                            <label for="formEmail" class="forms__label">Телефон<span>*</span>:</label>
+                            <input type="tel" name="tel" id="formTel" class="forms__input" maxlength="50" autofocus="autofocus" placeholder="+7(___)___-__-__" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
+                        </div>
+                        <div class="slider__forms-item">
+                            <label for="formEmail" class="forms__label">
+                                E-mail:
+                            </label>
+                            <input type="text" name="email" id="formEmail" class="forms__input _req _email" placeholder="email" maxlength="255" required>
+                        </div>
+
+
+                        <div class="slider__forms-item">
+                            <div class="checkbox">
+                                <input type="checkbox" name="agreement" id="formAgreement" class="checkbox__input _req">
+                                <label for="formAgreement" class="checkbox__label"><span>Я даю свое согласие на обработку персональных данных в соответствие с <a target="_blank" href="privacy">Условиями</a>*</span></label>
+                            </div>
+                        </div>
+                        <div class="slider__forms-item">
+                            <button type="submit" class="forms__button">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="./js/slider.js"></script>
 </body>
 
 </html>
